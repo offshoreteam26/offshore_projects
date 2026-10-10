@@ -1,0 +1,32 @@
+# Secrets - never upload
+.env
+.env.*
+*.pem
+credentials*.json
+service_account*.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Excel / generated files
+~$*.xlsx
+EventAgent.xlsx
+*.pdf
+card_assets/
+
+# Old Django project - not part of EventAgent
+manage.py
+offshore_projects/
+classificados/
+
+# Generated per-event files (keep the empty folders)
+static/data/*
+static/cards/*
+static/passes/*
+static/qrcodes/*
+static/posters/*
+static/previews/*
+!static/*/.gitkeep
